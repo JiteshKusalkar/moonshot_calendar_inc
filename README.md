@@ -14,7 +14,9 @@ For starting the app use the below `.env` config
 ```
 REACT_APP_BASE_URL=https://lldev.thespacedevs.com
 REACT_APP_URL_VER=2.2.0
-REACT_APP_MAPBOX_ACCESS_TOKEN={use_your_public_key}
+REACT_APP_STYLE_ID={style_id}
+REACT_APP_USER_ID={user_id}
+REACT_APP_MAPBOX_ACCESS_TOKEN={public_key}
 ```
 
 Once `.env` is placed, use the "Available scripts" below to run, build and test the app.
