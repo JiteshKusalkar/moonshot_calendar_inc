@@ -8,9 +8,7 @@ function getLaunchPadsLocation(launches: Launch[]) {
       Number(launch.pad.latitude),
       Number(launch.pad.longitude),
     ] as LatLngTuple,
-    popupMessage: `Name: ${launch.pad.location.name}, 
-    Name of pad: ${launch.pad.name}, 
-    Agency: ${launch.launch_service_provider.name}`,
+    popupMessage: `Name: ${launch.pad.location.name}, Name of pad: ${launch.pad.name}, Agency: ${launch.launch_service_provider.name}`,
   }));
 }
 

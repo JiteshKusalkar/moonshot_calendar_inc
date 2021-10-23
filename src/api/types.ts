@@ -13,13 +13,13 @@ type PadLocation = {
   country_code: string;
   name: string;
   url: string;
-  total_landing_count: string;
+  total_landing_count: number;
   total_launch_count: number;
   map_image: string;
 };
 
 type Pad = {
-  id: string;
+  id: number;
   name: string;
   latitude: string;
   longitude: string;
@@ -27,7 +27,7 @@ type Pad = {
 };
 
 type LaunchServiceProvider = {
-  id: string;
+  id: number;
   name: string;
   type: string;
 };

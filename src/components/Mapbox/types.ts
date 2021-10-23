@@ -2,7 +2,7 @@ import { LatLngTuple } from 'leaflet';
 import { ReactNode } from 'react';
 
 type LaunchPadMarker = {
-  id: string;
+  id: number;
   position: LatLngTuple;
   popupMessage: ReactNode;
 };
