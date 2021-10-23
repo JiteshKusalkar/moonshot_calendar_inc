@@ -1,7 +1,16 @@
-function get(endpoint: string) {
-  const url = `${process.env.REACT_APP_BASE_URL}/${process.env.REACT_APP_URL_VER}/${endpoint}`;
+import axios from 'axios';
+import { LaunchRequestParams } from './types';
 
-  return fetch({ method: 'GET', url } as RequestInfo);
+function get(endpoint: string, parameters?: LaunchRequestParams) {
+  const url = `${process.env.REACT_APP_BASE_URL}/${process.env.REACT_APP_URL_VER}/${endpoint}`;
+  const params = {
+    include_suborbital: true,
+    is_crewed: false,
+    related: false,
+    ...parameters,
+  };
+
+  return axios({ method: 'GET', url, params });
 }
 
 export { get };
