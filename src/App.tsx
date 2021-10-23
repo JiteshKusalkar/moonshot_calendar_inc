@@ -1,5 +1,18 @@
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+import Mapbox from './components/Map';
+import ErrorBoundary from './components/ErrorBoundary';
+
+const queryClient = new QueryClient()
+
 function App() {
-  return <div>Start here</div>
+  return (
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <Mapbox />
+      </QueryClientProvider>
+    </ErrorBoundary>
+  );
 }
 
 export default App;
