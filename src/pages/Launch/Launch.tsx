@@ -1,22 +1,8 @@
-import { AxiosResponse } from 'axios';
-import { useQuery } from 'react-query';
-
-import { getLaunch } from '../../api/launch';
-import { LaunchResponse } from '../../api/types';
 import Mapbox from '../../components/Mapbox';
-import { getLaunchPadsLocation } from './utils';
+import useLaunches from './useLaunches';
 
 function LaunchPadMap() {
-  const { data: response } = useQuery<AxiosResponse<LaunchResponse>>(
-    'launch',
-    getLaunch,
-    {
-      refetchOnWindowFocus: false,
-    }
-  );
-
-  const launchPadsLocation = getLaunchPadsLocation(response?.data.results || []);
-
+  const launchPadsLocation = useLaunches();
   return <Mapbox launchPadsLocation={launchPadsLocation} />;
 }
 

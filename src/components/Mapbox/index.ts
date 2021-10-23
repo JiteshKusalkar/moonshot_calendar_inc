@@ -1,1 +1,1 @@
-export { default } from './ReactMap';
+export { default } from './Mapbox';

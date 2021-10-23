@@ -20,13 +20,21 @@ type PadLocation = {
 
 type Pad = {
   id: string;
+  name: string;
   latitude: string;
   longitude: string;
   location: PadLocation;
 };
 
+type LaunchServiceProvider = {
+  id: string;
+  name: string;
+  type: string;
+};
+
 type Launch = {
   pad: Pad;
+  launch_service_provider: LaunchServiceProvider;
 };
 
 type LaunchResponse = {

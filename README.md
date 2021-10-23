@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About the app
+
+### Prerequisite
+**Node**: 12.20.2
+
+**Yarn**: 1.22.10
+
+For starting the app use the below `.env` config
+
+```
+REACT_APP_BASE_URL=https://lldev.thespacedevs.com
+REACT_APP_URL_VER=2.2.0
+REACT_APP_MAPBOX_ACCESS_TOKEN={use_your_public_key}
+```
+
+Once `.env` is placed, use the "Available scripts" below to run, build and test the app.
+
 ## Available Scripts
 
 In the project directory, you can run:
