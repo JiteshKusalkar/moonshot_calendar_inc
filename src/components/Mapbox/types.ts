@@ -1,14 +1,16 @@
 import { LatLngTuple } from 'leaflet';
 import { ReactNode } from 'react';
+import { Launch } from '../../api/types';
 
-type LaunchPadMarker = {
+type LaunchPadMarker<D = Launch> = {
   id: number;
   position: LatLngTuple;
-  popupMessage: ReactNode;
+  data?: D;
 };
 
-type MapboxProps = {
-  launchPadsLocation: LaunchPadMarker[];
+type MapboxProps<D> = {
+  launchPadsLocation: LaunchPadMarker<D>[];
+  renderMessage: (launch?: D) => ReactNode;
 };
 
 export type { LaunchPadMarker, MapboxProps };

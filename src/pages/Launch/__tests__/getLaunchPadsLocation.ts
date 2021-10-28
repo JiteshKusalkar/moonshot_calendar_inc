@@ -32,9 +32,8 @@ describe('getLaunchPadsLocation', () => {
     const result = [
       {
         id: 83,
-        popupMessage:
-          'Name: Vostochny Cosmodrome, Siberia, Russian Federation, Name of pad: Cosmodrome Site 1S, Agency: Arianespace',
         position: [51.884395, 128.333932],
+        launch,
       },
     ];
 

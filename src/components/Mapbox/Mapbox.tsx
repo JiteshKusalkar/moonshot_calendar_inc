@@ -19,11 +19,9 @@ const styleId = process.env.REACT_APP_STYLE_ID
 const userId = process.env.REACT_APP_USER_ID
 const position: LatLngTuple = [51.505, -0.09];
 
-// mapbox://styles/reet48/ckdaqo17l1gcs1iqgvf6rp9in
-
 const url = `https://api.mapbox.com/styles/v1/${userId}/${styleId}/tiles/256/{z}/{x}/{y}@2x?access_token=${token}`;
 
-function Mapbox(props: MapboxProps) {
+function Mapbox<D>(props: MapboxProps<D>) {
   return (
     <Wrapper>
       <MapContainer center={position} zoom={2} scrollWheelZoom={false}>
@@ -31,9 +29,9 @@ function Mapbox(props: MapboxProps) {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url={url}
         />
-        {props.launchPadsLocation.map(({ id, position, popupMessage }) => (
+        {props.launchPadsLocation.map(({ id, position, data }) => (
           <Marker key={id} position={position}>
-            <Popup>{popupMessage}</Popup>
+            <Popup>{props.renderMessage(data)}</Popup>
           </Marker>
         ))}
       </MapContainer>
