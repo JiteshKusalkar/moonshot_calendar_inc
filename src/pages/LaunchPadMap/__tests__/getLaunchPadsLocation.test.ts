@@ -33,7 +33,7 @@ describe('getLaunchPadsLocation', () => {
       {
         id: 83,
         position: [51.884395, 128.333932],
-        launch,
+        data: launch[0],
       },
     ];
 

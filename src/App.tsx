@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
 
-import Launch from './pages/Launch';
+import LaunchPadMap from './pages/LaunchPadMap';
 import ErrorBoundary from './components/ErrorBoundary';
 
 const queryClient = new QueryClient()
@@ -9,7 +9,7 @@ function App() {
   return (
     <ErrorBoundary>
       <QueryClientProvider client={queryClient}>
-        <Launch />
+        <LaunchPadMap />
       </QueryClientProvider>
     </ErrorBoundary>
   );

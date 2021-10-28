@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchPadPopupDetails should render the components with launch details 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL"
+  >
+    <div
+      class="sc-gsDKAQ kCqMgU"
+    >
+      <span
+        class="sc-dkPtRN kTxztz"
+      >
+        Name:
+      </span>
+      <span
+        class="sc-hKwDye"
+      >
+        Vostochny Cosmodrome, Siberia, Russian Federation
+      </span>
+    </div>
+    <div
+      class="sc-gsDKAQ kCqMgU"
+    >
+      <span
+        class="sc-dkPtRN kTxztz"
+      >
+        Name of pad:
+      </span>
+      <span
+        class="sc-hKwDye"
+      >
+        Cosmodrome Site 1S
+      </span>
+    </div>
+    <div
+      class="sc-gsDKAQ kCqMgU"
+    >
+      <span
+        class="sc-dkPtRN kTxztz"
+      >
+        Agency:
+      </span>
+      <span
+        class="sc-hKwDye"
+      >
+        Arianespace
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`LaunchPadPopupDetails should render the components without launch details 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL"
+  >
+    <div
+      class="sc-gsDKAQ kCqMgU"
+    >
+      <span
+        class="sc-dkPtRN kTxztz"
+      >
+        Name:
+      </span>
+      <span
+        class="sc-hKwDye"
+      >
+        -
+      </span>
+    </div>
+    <div
+      class="sc-gsDKAQ kCqMgU"
+    >
+      <span
+        class="sc-dkPtRN kTxztz"
+      >
+        Name of pad:
+      </span>
+      <span
+        class="sc-hKwDye"
+      >
+        -
+      </span>
+    </div>
+    <div
+      class="sc-gsDKAQ kCqMgU"
+    >
+      <span
+        class="sc-dkPtRN kTxztz"
+      >
+        Agency:
+      </span>
+      <span
+        class="sc-hKwDye"
+      >
+        -
+      </span>
+    </div>
+  </div>
+</div>
+`;

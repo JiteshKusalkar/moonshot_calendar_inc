@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchPadMap should render the component 1`] = `
+<div>
+  <div
+    class="iZEJDz"
+  >
+    <div>
+      <div />
+      <div>
+        <div>
+          <div
+            class=""
+          >
+            <div
+              class="kCqMgU"
+            >
+              <span
+                class="kTxztz"
+              >
+                Name:
+              </span>
+              <span
+                class=""
+              >
+                Vostochny Cosmodrome, Siberia, Russian Federation
+              </span>
+            </div>
+            <div
+              class="kCqMgU"
+            >
+              <span
+                class="kTxztz"
+              >
+                Name of pad:
+              </span>
+              <span
+                class=""
+              >
+                Cosmodrome Site 1S
+              </span>
+            </div>
+            <div
+              class="kCqMgU"
+            >
+              <span
+                class="kTxztz"
+              >
+                Agency:
+              </span>
+              <span
+                class=""
+              >
+                Arianespace
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
